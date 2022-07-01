@@ -14,7 +14,6 @@ objDir:
 jsonParser: obj/main.o\
 							obj/hashMap.o\
 							obj/linkedList.o\
-							obj/tuple.o\
 							obj/fileIO.o\
 							obj/logger.o\
 							obj/jsonCore.o\
@@ -23,7 +22,6 @@ jsonParser: obj/main.o\
 								cc $(ARGS) -o jsonParser obj/main.o\
 									obj/hashMap.o\
 									obj/linkedList.o\
-									obj/tuple.o\
 									obj/fileIO.o\
 									obj/logger.o\
 									obj/jsonCore.o\
@@ -47,9 +45,6 @@ obj/logger.o: src/IO/logger.c src/IO/logger.h
 
 obj/jsonParser.o: src/JSON/jsonParser.c src/JSON/jsonParser.h
 			cc $(ARGS) -c src/JSON/jsonParser.c -o obj/jsonParser.o
-
-obj/tuple.o: src/DataStructures/Tuple/tuple.c src/DataStructures/Tuple/tuple.h
-			cc $(ARGS) -c src/DataStructures/Tuple/tuple.c -o obj/tuple.o
 
 obj/stringUtils.o: src/Utils/stringUtils.c src/Utils/stringUtils.h
 			cc $(ARGS) -c src/Utils/stringUtils.c -o obj/stringUtils.o
