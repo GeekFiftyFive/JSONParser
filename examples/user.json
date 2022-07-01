@@ -1,0 +1,8 @@
+{
+  "user": {
+    "firstName": "Louise",
+    "lastName": "Smith",
+    "age": 32,
+    "likesCats": true
+  }
+}
